@@ -1,0 +1,7 @@
+<use name=Geometry/TrackerGeometryBuilder>
+<use name=Geometry/TrackerNumberingBuilder>
+<use name=Geometry/CommonDetUnit>
+<use name=FWCore/Framework>                                                                                                                                                                                    
+<flags SEAL_PLUGIN_NAME="testGeometryTrackerGeometryBuilder">
+<library file=TrackerDigiGeometryAnalyzer.cc name=testGeometryTrackerGeometryBuilder>
+</library>
