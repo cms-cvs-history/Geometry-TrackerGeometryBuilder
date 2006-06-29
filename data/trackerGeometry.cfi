@@ -2,4 +2,6 @@
 # This cfi should be included to build the Tracker geometry model.
 #
 
-es_module = TrackerDigiGeometryESModule {}
+es_module = TrackerDigiGeometryESModule {
+	untracked bool applyAlignment = false
+}
