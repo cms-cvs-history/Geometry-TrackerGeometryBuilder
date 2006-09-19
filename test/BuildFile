@@ -10,3 +10,7 @@
 <library file=TrackerMapTool.cc name=TrackerMapTool> 	 
 <flags SEAL_PLUGIN_NAME="TrackerMapTool"> 	 
 </library>
+
+<library file=ModuleInfo.cc name=ModuleInfo> 	 
+<flags SEAL_PLUGIN_NAME="ModuleInfo"> 	 
+</library>
