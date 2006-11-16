@@ -159,8 +159,8 @@ void TrackerGeomBuilderFromGeometricDet::buildGeomDet(TrackerGeometry* tracker){
       }
       const GeomDetUnit* dus = gdu[i];
       if(partner_pos==-1){
-	throw cms::Exception("Configuration") <<"No partner detector found \n"
-					<<"There is a problem on Tracker geometry configuration\n";
+	edm::LogError("TrackerGeomBuilderFromGeometricDet") <<"No partner detector found";
+	abort();
       }
       const GeomDetUnit* dum = gdu[partner_pos];
       glued.clear();
@@ -193,7 +193,8 @@ std::string TrackerGeomBuilderFromGeometricDet::getString(const std::string s, D
 	temp = val.strings(); 
 	if (temp.size() != 1)
 	{
-	  throw cms::Exception("Configuration") << "I need 1 "<< s << " tags";
+	  edm::LogError("TrackerGeomBuilderFromGeometricDet::getString") << "I need 1 "<< s << " tags";
+	  abort();
 	}
 	return temp[0]; 
     }
@@ -217,7 +218,8 @@ double TrackerGeomBuilderFromGeometricDet::getDouble(const std::string s,  DDExp
       temp = val.strings(); 
       if (temp.size() != 1)
 	{
-	  throw cms::Exception("Configuration") << "I need 1 "<< s << " tags";
+	  edm::LogError("TrackerGeomBuilderFromGeometricDet::getDouble") << "I need 1 "<< s << " tags";
+	  abort();
 	}
       return double(atof(temp[0].c_str())); 
     }
