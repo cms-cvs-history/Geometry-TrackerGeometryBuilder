@@ -3,5 +3,6 @@
 #
 
 es_module = TrackerDigiGeometryESModule {
-	untracked bool applyAlignment = false
+    untracked bool applyAlignment = false
+    bool fromDDD = true
 }
