@@ -5,7 +5,7 @@ cmsRun OnlyTrackerChainExampleSim.cfg
 date
 cmsRun OnlyTrackerChainExampleReco.cfg
 date
-cd ../../../CMSCommonData/data
+cd ../../CMSCommonData/data
 mv cmsIdealGeometryXML.cfi cmsIdealGeometryXMLREAL.cfi
 touch cmsIdealGeometryXML.cfi
 cd -
