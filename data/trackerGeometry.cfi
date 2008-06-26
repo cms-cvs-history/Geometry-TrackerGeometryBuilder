@@ -2,7 +2,12 @@
 # This cfi should be included to build the Tracker geometry model.
 #
 
-es_module = TrackerDigiGeometryESModule {
-    untracked bool applyAlignment = false
+# GF would like to have a shorter name (e.g. TrackerGeometry), but since originally
+# there was no name, replace statements in other configs would not work anymore...
+es_module TrackerDigiGeometryESModule = TrackerDigiGeometryESModule {
+    string appendToDataLabel = ""
+    bool applyAlignment = false # GF: to be abandoned/set to true
     bool fromDDD = true
+
+    string alignmentsLabel = ""
 }
