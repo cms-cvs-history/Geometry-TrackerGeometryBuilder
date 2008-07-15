@@ -6,7 +6,7 @@
 # there was no name, replace statements in other configs would not work anymore...
 es_module TrackerDigiGeometryESModule = TrackerDigiGeometryESModule {
     string appendToDataLabel = ""
-    bool applyAlignment = false # GF: to be abandoned/set to true
+    bool applyAlignment = true # GF: to be abandoned
     bool fromDDD = true
 
     string alignmentsLabel = ""
