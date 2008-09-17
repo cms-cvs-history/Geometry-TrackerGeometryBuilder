@@ -47,7 +47,7 @@ PixelTopology* PixelTopologyBuilder::build(const Bounds* bs,double rocRow,double
   //   <<std::endl;   
 
   return new RectangularPixelTopology(nrows,ncols,pitchX,pitchY,
-				      rocInX, rocInY, rocRow, rocCol);
+				      (int)rocInX, (int)rocInY, (int)rocRow, (int)rocCol);
 
 }
 
