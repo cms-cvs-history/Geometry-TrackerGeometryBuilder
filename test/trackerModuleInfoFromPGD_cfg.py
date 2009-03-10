@@ -18,7 +18,7 @@ process.PoolDBESSource = cms.ESSource("PoolDBESSource",
     #	string connect = "sqlite_file:test.db"
     timetype = cms.string('runnumber'),
     toGet = cms.VPSet(cms.PSet(
-        record = cms.string('PGeometricDetRcd'),
+        record = cms.string('IdealGeometryRecordcd'),
         tag = cms.string('PGeometricDet')
     )),
     catalog = cms.untracked.string('file:testcatalog.xml'),
