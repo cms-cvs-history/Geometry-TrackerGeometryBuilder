@@ -30,7 +30,7 @@ process.PoolDBESSource = cms.ESSource("PoolDBESSource",
 
 process.print = cms.OutputModule("AsciiOutputModule")
 
-process.prod = cms.EDFilter("ModuleInfo",
+process.prod = cms.EDAnalyzer("ModuleInfo",
     fromDDD = cms.bool(False)
 )
 
